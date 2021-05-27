@@ -7,10 +7,12 @@ import imagePath from '../constants/imagePath';
 import navigationStrings from '../constants/navigationStrings';
 import Sidebar from 'react-native-sidebar';
 import TabBar from '../Navigation/TabBar';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import {Drawer} from '../Screens/Drawer';
 
 class Home extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             arrData: [
                 { title: "Max Safety" },
@@ -60,12 +62,18 @@ class Home extends Component {
         this.props.navigation.navigate(navigationStrings.History)
     }
     render() {
-        
+        console.log(this.props.route.params, "what getting")
+        const Draw = createDrawerNavigator()
     
         const { navigation } = this.props
+
+        
+
       
+       
         return (
             <ScrollView showsVerticalScrollIndicator ={false}>
+            
                 <View style={{ flex: 1 }}>
 
                     <View style={{ flex: 0, flexDirection: 'row', marginTop: 50 }}>
@@ -73,10 +81,10 @@ class Home extends Component {
                             <Image source={imagePath.location} style={{ height: 30, width: 30 }} />
                         </View>
                         <View style={{ flex: 4 }}>
-                            <Text style={{ fontWeight: 'bold', fontSize: 20, fontStyle: 'serif' }}>Bathinda</Text>
+                            <Text style={{ fontWeight: 'bold', fontSize: 20, fontStyle: 'serif' }}>{this.props.route.params.data}</Text>
                         </View>
                         <View style={{ flex: 0.7 }}>
-                            <Image source={imagePath.menu} style={{ height: 20, width: 20, marginTop: 2 }} />
+                            <Image source= {{uri : this.props.route.params.new}} style={{ height: 40, width: 40, marginTop: 2 ,borderRadius : 30 }} />
                         </View>
                     </View>
 
@@ -173,12 +181,6 @@ class Home extends Component {
 
                     </View>
                 </View>
-                 <Sidebar
-                leftSidebar={ this.renderLeftSidebar() }
-                rightSidebar={ this.renderRightSidebar() }
-                style={{ flex: 1, backgroundColor: 'black' }}>
-            { this.renderContent() }
-        </Sidebar>
             </ScrollView>
             
         );

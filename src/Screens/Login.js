@@ -7,29 +7,29 @@ class Login extends Component {
     constructor() {
         super()
         this.state = {
-            number : ''
+            number: ''
         }
     }
 
-    onChangeText =(e)=>{
-   this.setState({number : e})
+    onChangeText = (e) => {
+        this.setState({ number: e })
     }
 
     moveToHome = () => {
-        this.props.navigation.navigate(navigationStrings.Home)
+        this.props.navigation.navigate(navigationStrings.Home ,{data : '' , new : ''})
     }
 
     moveToOtp = () => {
-        const reg = /^[789765]\d{9}$/ ;
-        if(this.state.number === "" ){
+        const reg = /^[789765]\d{9}$/;
+        if (this.state.number === "") {
             alert("Enter  Mobile Number")
         }
-        else if(reg.test(this.state.number) === false){
+        else if (reg.test(this.state.number) === false) {
             alert("Enter Correct  Number")
         }
-        else{
-        this.props.navigation.navigate(navigationStrings.Otp)
-        this.setState({number : ''})
+        else {
+            this.props.navigation.navigate(navigationStrings.Otp)
+            this.setState({ number: '' })
         }
     }
 
@@ -48,13 +48,13 @@ class Login extends Component {
                     </TouchableOpacity>
 
                 </View>
-                <View style={{ alignItems: 'center', flex: 1 , flexDirection : 'row' }}>
-                <View style ={{flex : 0}}>
-                    <Image source={imagePath.foodlogo} style={{ width: 150, height: 150 }} />
+                <View style={{ alignItems: 'center', flex: 1, flexDirection: 'row' }}>
+                    <View style={{ flex: 0 }}>
+                        <Image source={imagePath.foodlogo} style={{ width: 150, height: 150 }} />
                     </View>
-                    <View style ={{flex : 1}}>
-                   <Text style= {{color : 'white', fontSize : 40 , fontWeight : 'bold' , fontFamily : 'serif', textShadowColor : 'black' , textShadowRadius : 10  }}>FOODIE PIE</Text>
-                   <Text style= {{color : 'white', fontSize : 12 , fontWeight : 'bold' , fontFamily : 'serif' , textShadowColor : 'white' , textShadowRadius : 5 }}>Delievers your food at Time</Text>
+                    <View style={{ flex: 1 }}>
+                        <Text style={{ color: 'white', fontSize: 40, fontWeight: 'bold', fontFamily: 'serif', textShadowColor: 'black', textShadowRadius: 10 }}>FOODIE PIE</Text>
+                        <Text style={{ color: 'white', fontSize: 12, fontWeight: 'bold', fontFamily: 'serif', textShadowColor: 'white', textShadowRadius: 5 }}>Delievers your food at Time</Text>
                     </View>
 
                 </View>
@@ -68,10 +68,10 @@ class Login extends Component {
                             <Text>+91</Text>
                         </View>
                         <View style={{ flex: 5, justifyContent: 'center' }}>
-                            <TextInput value = {this.state.number} maxLength = {10} onChangeText = {(e)=>{this.onChangeText(e)}} keyboardType='numeric' placeholder="Phone Number" style={{ height: 50 }} />
+                            <TextInput value={this.state.number} maxLength={10} onChangeText={(e) => { this.onChangeText(e) }} keyboardType='numeric' placeholder="Phone Number" style={{ height: 50 }} />
                         </View>
                     </View>
-                    <TouchableOpacity onPress={(e)=>this.moveToOtp(e)} style={{ flex: 1, borderRadius: 10, backgroundColor: 'black', justifyContent: 'center', marginTop: 15, height: 50 }}>
+                    <TouchableOpacity onPress={(e) => this.moveToOtp(e)} style={{ flex: 1, borderRadius: 10, backgroundColor: 'black', justifyContent: 'center', marginTop: 15, height: 50 }}>
 
                         <Text style={{ textAlign: 'center', color: 'white', fontWeight: 'bold' }}>LOG IN</Text>
 

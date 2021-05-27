@@ -59,9 +59,6 @@ class History extends Component {
             <View style={{ flex: 1, backgroundColor: '#F8F8FF' }}>
                 <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'green', borderBottomRightRadius: 50, borderBottomWidth: 0.4, borderBottomLeftRadius: 50 }}>
                     <View style={{ flex: 0, justifyContent: 'center', marginLeft: 20 }}>
-                        <TouchableOpacity onPress={this.moveBack}>
-                            <Image source={imagePath.back} style={{ height: 30, width: 30 }} />
-                        </TouchableOpacity>
                     </View>
                     <View style={{ flex: 1, justifyContent: 'center' }}>
                         <Text style={{ textAlign: 'center', color: 'white', fontSize: 30, fontWeight: 'bold' }}>Order History</Text>

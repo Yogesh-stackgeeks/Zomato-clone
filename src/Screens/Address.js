@@ -39,14 +39,11 @@ class Address extends Component {
     }
 
     moveBack = ()=>{
-  if (this.state.arrData.checked == false){
-      alert("select")
-  }
-  else{
-        this.props.navigation.navigate(navigationStrings.CheckOut)
+        this.props.navigation.navigate(navigationStrings.CheckOut , {name : this.state.main , add : `${this .state.address}--${this.state.pin}`,
+           numbers : this.state.number })
   }
        
-    }
+    
 
     moveData =()=>{
         const newData = [...this.state.arrData]

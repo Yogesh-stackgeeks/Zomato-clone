@@ -54,17 +54,13 @@ class CheckOut extends Component {
     }
 
     render() {
+        console.log(this.props.route.params , "get data")
         const { navigation } = this.props
         return (
             <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator ={false} >
-                <View style={{ flex: 1, flexDirection: 'row', marginTop: 60, marginLeft: 15 }}>
-                    <View style={{ flex: 1, justifyContent: 'center' }}>
-                        <TouchableOpacity onPress={this.moveBack}>
-                            <Image source={imagePath.back} style={{ height: 25, width: 25 }} />
-                        </TouchableOpacity>
-                    </View>
+                <View style={{ flex: 1, flexDirection: 'row', marginTop: 50, marginLeft: 15 }}>
                     <View style={{ flex: 2, justifyContent: 'center' }}>
-                        <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Order Details</Text>
+                        <Text style={{ fontSize: 35, fontWeight: 'bold' , textAlign : 'center' }}>Order Details</Text>
                     </View>
                 </View>
                 <View style={{ flex: 1, margin: 20, backgroundColor: 'black', borderRadius: 10 , flexDirection : 'row' }}>
@@ -135,7 +131,7 @@ class CheckOut extends Component {
                             <Image source={imagePath.profile} style={{ height: 25, width: 25 }} />
                         </View>
                         <View style={{ flex: 1 }}>
-                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>StackGeeks Labs</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{this.props.route.params.name}</Text>
                         </View>
                     </View>
                     <View style={{ flex: 1, flexDirection: 'row', margin: 20 }}>
@@ -143,7 +139,7 @@ class CheckOut extends Component {
                             <Image source={imagePath.location} style={{ height: 25, width: 25 }} />
                         </View>
                         <View style={{ flex: 1 }}>
-                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>SCO-25 , Sector 43 , Chandigarh</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>{this.props.route.params.add}</Text>
                         </View>
                     </View>
                     <View style={{ flex: 1, flexDirection: 'row', margin: 20 }}>
@@ -151,7 +147,7 @@ class CheckOut extends Component {
                             <Image source={imagePath.call} style={{ height: 25, width: 25 }} />
                         </View>
                         <View style={{ flex: 1 }}>
-                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>+91-9876543210</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold' }}>+91-{this.props.route.params.numbers}</Text>
                         </View>
                     </View>
                 </View>

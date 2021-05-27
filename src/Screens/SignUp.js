@@ -11,7 +11,8 @@ class SignUp extends Component {
             named: '',
             email: '',
             password: '',
-            confirmPassword: ''
+            confirmPassword: '',
+            locations : ''
         }
     }
 
@@ -41,7 +42,7 @@ class SignUp extends Component {
             alert("Password and Confirm Password Dont Match")
         }
         else{
-        this.props.navigation.navigate(navigationStrings.Home)
+        this.props.navigation.navigate(navigationStrings.Home , {data : this.state.locations , new : ''})
         }
     }
 
@@ -85,6 +86,12 @@ class SignUp extends Component {
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(cpasscode) => this.onChangePass(cpasscode)} placeholder="Enter Password Again" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />
+                        </View>
+                        <View style={{ marginTop: 20 }}>
+                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}>Location</Text>
+                        </View>
+                        <View style={{ marginTop: 5 }}>
+                            <TextInput onChangeText={(text) => this.setState({locations : text})} placeholder="Enter Location" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />
                         </View>
                     </View>
 

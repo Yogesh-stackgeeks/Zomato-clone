@@ -51,6 +51,10 @@ main :  require('../assests/images/main.png'),
 home :  require('../assests/images/home.png'),
 menu2 :  require('../assests/images/menu2.png'),
 address :  require('../assests/images/address.png'),
+settings :  require('../assests/images/settings.png'),
+offer :  require('../assests/images/offer.png'),
+homepage :  require('../assests/images/homepage.png'),
+logout :  require('../assests/images/logout.png'),
 
 
 
