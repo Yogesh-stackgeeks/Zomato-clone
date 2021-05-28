@@ -65,11 +65,11 @@ class CheckOut extends Component {
                 </View>
                 <View style={{ flex: 1, margin: 20, backgroundColor: 'black', borderRadius: 10 , flexDirection : 'row' }}>
                 <View style = {{flex : 1}}>
-                    <Text style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 'bold', color: 'white', marginLeft: 20 }}>Your Order</Text>
+                    <Text style={{ fontFamily: 'italic', fontSize: 20, fontWeight: 'bold', color: 'white', marginLeft: 20 }}>Your Order</Text>
                     </View>
                     <View style = {{flex : 0.5}}>
                     <TouchableOpacity onPress ={this.moveCart} style = {{backgroundColor : 'red' , borderWidth : 0.2 , borderRadius : 10}}>
-                    <Text style={{ fontFamily: 'serif', fontSize: 20, fontWeight: 'bold', color: 'white' , marginLeft : 10 }}>Add More</Text>
+                    <Text style={{ fontFamily: 'italic', fontSize: 20, fontWeight: 'bold', color: 'white' , marginLeft : 10 }}>Add More</Text>
                     </TouchableOpacity>
                     </View>
                 </View>
@@ -118,7 +118,7 @@ class CheckOut extends Component {
                 <View style={{ flex: 1, backgroundColor: 'lightgray', margin: 10, borderRadius: 30 }}>
                     <View style={{ flex: 1, flexDirection: 'row', margin: 20 }}>
                         <View style={{ flex: 2 }}>
-                            <Text style={{ fontSize: 15, fontWeight: 'bold', fontFamily: 'serif' }}>Delievery Information</Text>
+                            <Text style={{ fontSize: 15, fontWeight: 'bold', fontFamily: 'italic' }}>Delievery Information</Text>
                         </View>
                         <View style={{ flex: 1, alignItems: 'flex-end' }}>
                         <TouchableOpacity onPress = {this.moveAddress}>

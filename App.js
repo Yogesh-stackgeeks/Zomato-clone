@@ -17,12 +17,13 @@ import {Drawer} from './src/Screens/Drawer';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import navigationStrings from './src/constants/navigationStrings';
 import { SlideDrawer } from './src/Navigation/SlideDrawer';
+import Location from './src/Screens/Location';
 
 const Draw = createDrawerNavigator();
 
 export default function App() {
   return (
-<SlideDrawer />
+     <Location / >
   )}
 
 

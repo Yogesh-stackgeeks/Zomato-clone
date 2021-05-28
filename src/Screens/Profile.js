@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     texts: {
         fontSize: 20,
         fontWeight: 'bold',
-        fontFamily: 'serif',
+        fontFamily: 'italic',
         fontStyle: 'italic'
     }
 });
