@@ -201,7 +201,7 @@ class Cart extends Component {
                 </View>
 
                 <View style={{ flex: 0, margin: 5 }}>
-                    <Text style={{ fontSize: 20, fontWeight: 'bold', fontFamily: 'serif' }}>FULL MENU </Text>
+                    <Text style={{ fontSize: 20, fontWeight: 'bold', fontFamily: 'italic' }}>FULL MENU </Text>
 
                 </View>
                 <View

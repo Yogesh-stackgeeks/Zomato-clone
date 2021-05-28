@@ -44,7 +44,7 @@ class Login extends Component {
 
                 <View style={{ flex: 1, alignItems: 'flex-end' }}>
                     <TouchableOpacity onPress={this.moveToHome} style={{ backgroundColor: '#696969', width: 80, borderRadius: 15, height: 32, margin: 30, justifyContent: 'center' }}>
-                        <Text style={{ color: 'white', textAlign: 'center', fontFamily: 'serif' }}>Skip</Text>
+                        <Text style={{ color: 'white', textAlign: 'center', fontFamily: 'italic' }}>Skip</Text>
                     </TouchableOpacity>
 
                 </View>
@@ -53,8 +53,8 @@ class Login extends Component {
                         <Image source={imagePath.foodlogo} style={{ width: 150, height: 150 }} />
                     </View>
                     <View style={{ flex: 1 }}>
-                        <Text style={{ color: 'white', fontSize: 40, fontWeight: 'bold', fontFamily: 'serif', textShadowColor: 'black', textShadowRadius: 10 }}>FOODIE PIE</Text>
-                        <Text style={{ color: 'white', fontSize: 12, fontWeight: 'bold', fontFamily: 'serif', textShadowColor: 'white', textShadowRadius: 5 }}>Delievers your food at Time</Text>
+                        <Text style={{ color: 'white', fontSize: 40, fontWeight: 'bold', fontFamily: 'italic', textShadowColor: 'black', textShadowRadius: 10 }}>FOODIE PIE</Text>
+                        <Text style={{ color: 'white', fontSize: 12, fontWeight: 'bold', fontFamily: 'italic', textShadowColor: 'white', textShadowRadius: 5 }}>Delievers your food at Time</Text>
                     </View>
 
                 </View>
@@ -85,7 +85,7 @@ class Login extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 0, justifyContent: 'center' }}>
-                    <Text style={{ textAlign: 'center', fontFamily: 'serif', color: 'darkgray' }}>__________________OR__________________</Text>
+                    <Text style={{ textAlign: 'center', fontFamily: 'italic', color: 'darkgray' }}>__________________OR__________________</Text>
                 </View>
 
                 <View style={{ flex: 1, flexDirection: 'column', margin: 30 }}>
@@ -95,7 +95,7 @@ class Login extends Component {
                             <Image source={imagePath.email} style={{ height: 30, width: 30 }} />
                         </View>
                         <View style={{ flex: 4, justifyContent: 'center' }}>
-                            <Text style={{ textAlign: 'center', fontFamily: 'serif' }}>Continue with Email</Text>
+                            <Text style={{ textAlign: 'center', fontFamily: 'italic' }}>Continue with Email</Text>
                         </View>
                     </TouchableOpacity>
 
@@ -105,7 +105,7 @@ class Login extends Component {
                                 <Image source={imagePath.facebook} style={{ height: 30, width: 30 }} />
                             </View>
                             <View style={{ flex: 2, justifyContent: 'center' }}>
-                                <Text style={{ textAlign: 'center', fontFamily: 'serif' }}>Facebook</Text>
+                                <Text style={{ textAlign: 'center', fontFamily: 'italic' }}>Facebook</Text>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity style={{ flex: 1, flexDirection: 'row', backgroundColor: 'white', borderRadius: 10, marginLeft: 20, height: 50 }}>
@@ -113,7 +113,7 @@ class Login extends Component {
                                 <Image source={imagePath.gmail} style={{ height: 30, width: 30 }} />
                             </View>
                             <View style={{ flex: 2, justifyContent: 'center' }}>
-                                <Text style={{ textAlign: 'center', fontFamily: 'serif' }}>Google</Text>
+                                <Text style={{ textAlign: 'center', fontFamily: 'italic' }}>Google</Text>
                             </View>
                         </TouchableOpacity>
 

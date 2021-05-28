@@ -81,7 +81,7 @@ class Home extends Component {
                             <Image source={imagePath.location} style={{ height: 30, width: 30 }} />
                         </View>
                         <View style={{ flex: 4 }}>
-                            <Text style={{ fontWeight: 'bold', fontSize: 20, fontStyle: 'serif' }}>{this.props.route.params.data}</Text>
+                            <Text style={{ fontWeight: 'bold', fontSize: 20, fontStyle: 'italic' }}>{this.props.route.params.data}</Text>
                         </View>
                         <View style={{ flex: 0.7 }}>
                             <Image source= {{uri : this.props.route.params.new}} style={{ height: 40, width: 40, marginTop: 2 ,borderRadius : 30 }} />
@@ -119,7 +119,7 @@ class Home extends Component {
                             <View>
                                 <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center', color: 'white' }}>home Style</Text>
                                 <Text style={{ fontSize: 22, fontWeight: 'bold', color: 'white', textAlign: 'center' }}>food!</Text>
-                                <Text style={{ fontSize: 15, marginLeft: 10, color: 'white', fontStyle: 'serif' }}>a taste of home for {'\n'}you</Text>
+                                <Text style={{ fontSize: 15, marginLeft: 10, color: 'white', fontStyle: 'italic' }}>a taste of home for {'\n'}you</Text>
                                 <Image source={imagePath.next} style={{ height: 30, width: 30, margin: 20 }} />
                             </View>
 
@@ -128,7 +128,7 @@ class Home extends Component {
                             <View>
                                 <Text style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center', color: 'white' }}>the best</Text>
                                 <Text style={{ fontSize: 22, fontWeight: 'bold', color: 'white', textAlign: 'center' }}>offers!</Text>
-                                <Text style={{ fontSize: 15, marginLeft: 10, color: 'white', fontStyle: 'serif' }}>at the best restaurents</Text>
+                                <Text style={{ fontSize: 15, marginLeft: 10, color: 'white', fontStyle: 'italic' }}>at the best restaurents</Text>
                                 <Image source={imagePath.next} style={{ height: 30, width: 30, margin: 35 }} />
                             </View>
 

@@ -50,12 +50,12 @@ class Otp extends Component {
                     <Image source={imagePath.Otp} style={{ height: 250, width: 250 }} />
                 </View>
                 <View style={{ flex: 1, margin: 50, alignItems: 'center' }}>
-                    <Text style={{ fontWeight: 'bold', color: 'gray', fontSize: 16, fontFamily: 'serif' }}>Please Enter the Verification Code Sent to your Number</Text>
+                    <Text style={{ fontWeight: 'bold', color: 'gray', fontSize: 16, fontFamily: 'italic' }}>Please Enter the Verification Code Sent to your Number</Text>
 
                 </View>
                 {this.state.status ?
                 <View style={{ alignItems: 'center' }}>
-                <Text style={{ fontWeight: 'bold', color: 'gray', fontSize: 14, fontFamily: 'serif' }}>We Have Re-sended the OTP</Text>  
+                <Text style={{ fontWeight: 'bold', color: 'gray', fontSize: 14, fontFamily: 'italic' }}>We Have Re-sended the OTP</Text>  
                 </View> : null
                 }
 

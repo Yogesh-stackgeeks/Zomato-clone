@@ -58,37 +58,37 @@ class SignUp extends Component {
                 <ScrollView style={{ flex: 1 }}>
 
                     <View style={{ margin: 40, justifyContent: 'center', alignItems: 'center' }}>
-                        <Text style={{ fontSize: 50, fontWeight: 'bold', fontFamily: 'serif', color: 'gray', width: 200 }}>SIGN UP</Text>
+                        <Text style={{ fontSize: 50, fontWeight: 'bold', fontFamily: 'italic', color: 'gray', width: 200 }}>SIGN UP</Text>
                     </View>
                     <View style={{ flexDirection: 'column', margin: 40 }}>
                         <View style={{ flex: 1 }}>
-                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}>Name</Text>
+                            <Text style={{ fontFamily: 'italic', fontSize: 16, fontWeight: 'bold' }}>Name</Text>
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(name) => this.onChangeName(name)} placeholder="Enter Name" style={{ height: 40, borderWidth: 1, borderRadius: 10, padding: 5 }} />
                         </View>
                         <View style={{ marginTop: 20 }}>
-                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}>Email</Text>
+                            <Text style={{ fontFamily: 'italic', fontSize: 16, fontWeight: 'bold' }}>Email</Text>
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(email) => this.onChangeEmail(email)} placeholder="Enter Email" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />
                         </View>
 
                         <View style={{ marginTop: 20 }}>
-                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}>Password</Text>
+                            <Text style={{ fontFamily: 'italic', fontSize: 16, fontWeight: 'bold' }}>Password</Text>
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(passcode) => this.onChangePassword(passcode)} placeholder="Enter Password" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />
                         </View>
 
                         <View style={{ marginTop: 20 }}>
-                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}> Confirm Password</Text>
+                            <Text style={{ fontFamily: 'italic', fontSize: 16, fontWeight: 'bold' }}> Confirm Password</Text>
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(cpasscode) => this.onChangePass(cpasscode)} placeholder="Enter Password Again" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />
                         </View>
                         <View style={{ marginTop: 20 }}>
-                            <Text style={{ fontFamily: 'serif', fontSize: 16, fontWeight: 'bold' }}>Location</Text>
+                            <Text style={{ fontFamily: 'italic', fontSize: 16, fontWeight: 'bold' }}>Location</Text>
                         </View>
                         <View style={{ marginTop: 5 }}>
                             <TextInput onChangeText={(text) => this.setState({locations : text})} placeholder="Enter Location" style={{ borderWidth: 1, borderRadius: 10, height: 40, padding: 5 }} />

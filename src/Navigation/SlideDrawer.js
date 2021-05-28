@@ -23,10 +23,10 @@ export function SlideDrawer() {
 return(
     <NavigationContainer>
 
-    <Draw.Navigator drawerContent = {props => <Drawer {...props} /> } >
-    <Draw.Screen name = {navigationStrings.Login} component = {Login} />
+    <Draw.Navigator  drawerContent = {props => <Drawer {...props} /> } >
+    <Draw.Screen  name = {navigationStrings.Login} component = {Login} />
     
-    <Draw.Screen name = {navigationStrings.Home} component = {Home} />
+    <Draw.Screen  name = {navigationStrings.Home} component = {Home} />
     <Draw.Screen name = {navigationStrings.History} component = {History} />
     <Draw.Screen name = {navigationStrings.CheckOut} component = {CheckOut} />
     
